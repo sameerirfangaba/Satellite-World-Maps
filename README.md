@@ -6,7 +6,7 @@ The goal is to offer accessible and easy-to-use applications that enhance the us
 
 ## Included Content / Directories
 The repository contains several key directories and files, for example:  
-- `remote-all/`, `data-transfer/`, `smart-printer/`, `smart-recovery/` — (if these are sub-projects, briefly describe their purpose here)  
+- `remote-all/`, `data-transfer/`, `smart-printer/`, `smart-recovery/` 
 - `index.html` — main entry point for the website  
 - `image.jpg` — preview image or banner for the apps  
 
