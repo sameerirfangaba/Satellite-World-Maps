@@ -6,9 +6,11 @@ The goal is to offer accessible and easy-to-use applications that enhance the us
 
 ## Included Content / Directories
 The repository contains several key directories and files, for example:  
-- `remote-all/`, `data-transfer/`, `smart-printer/`, `smart-recovery/` 
+- `data-transfer/`, `docs-reader/`, `remote-all/`,`smart-printer/`,`smart-recovery/`
+- `offer-terms/` — offer terms for the apps
+- `privacy-policy/` — privacy policy for the apps  
 - `index.html` — main entry point for the website  
-- `image.jpg` — preview image or banner for the apps  
+- `images/` — preview image or banner for the apps  
 
 > **Note:** If any folder or file serves a special purpose (e.g., utilities, data processing, documentation), add a short description here.
 
