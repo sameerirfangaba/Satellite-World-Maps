@@ -3,297 +3,542 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satellite World Maps</title>
+    <title>Satellite World Maps - Innovative Mobile Apps</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ✅ HEADER START -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <!-- HEADER START -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-
-            <!-- Left Text -->
-            <a class="navbar-brand" href="/">Satellite World Maps </a>
-
-            <!-- Mobile Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="/">Satellite World Maps</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Right Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="/data-transfer">Smart Switch</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/remote-all">Remote All App</a></li> -->
-                    <!-- <li class="nav-item"><a class="nav-link" href="/smart-printer">Smart Printer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/smart-recovery">Smart Recovery</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="/privacy-policy/">Privacy Policy</a></li>
                     <li class="nav-item"><a class="nav-link" href="/offer-terms/">Offer Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apps">Our Apps</a></li>
                 </ul>
             </div>
-
         </div>
     </nav>
-    <!-- ✅ HEADER END -->
-    <img src="/images/Banner/hero-banner.jpg" alt="banner" class="header-image" >
-    <!-- ✅ OUR APPS SECTION -->
-<div class="container my-5">
-    <h2 class="section-title">Our Apps</h2>
-    <div class="row g-4">
+    <!-- HEADER END -->
 
-        <!-- ✅ App 01 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=invoicemaker.receiptmaker.invoicegenerator.estimatemaker" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/invoice-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/invoice-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Invoice Maker: Receipt Maker</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
+    <!-- HERO SECTION START -->
+    <section class="hero-section">
+        <img src="/images/Banner/hero-banner.jpg" alt="banner" class="header-image">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold text-white">Satellite World Maps</h1>
+                    <p class="lead text-white">Discover our collection of innovative mobile apps designed to make your life easier and more productive</p>
+                    <a href="#apps" class="btn btn-gradient btn-lg">Explore Our Apps <i class="bi bi-arrow-right ms-2"></i></a>
                 </div>
-            </a>
+            </div>
         </div>
+    </section>
+    <!-- HERO SECTION END -->
 
-        <!-- ✅ App 02 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=voicechanger.voiceeffects.audioeffects.funnysounds" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/voicechanger-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="images/Icons/voicechanger-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Voice Changer</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 03 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=remotecontrolfortv.universaltvremotecontrol.remotecontrolforandroidtv" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/remote-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="images/Icons/remote-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Remote Control: Universal TV</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 04 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=themes.wallpapers.widgets.animewallpapers.customthemes.fontskeyboard" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/theme-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/theme-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Themes - Wallpapers & Widgets</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 05 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=compassaccurate.compass.digitalandaccuratecompass" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/compass-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/compass-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Compass Accurate: Compass app</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 06 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=copymydata.phonetransfer.datacloneapp.transfercontent" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/ss-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="images/Icons/ss-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Smart Switch App: Copy My Data</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 07 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=speedometer.odometer.gpsspeedometer.speedtracker" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/speedometer-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/speedometer-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Speedometer: GPS Speedometer</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 08 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=com.liveearth.webcams.live.earth.cam.maps.livecams.exploreworld.earthcams" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/camera-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/camera-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Live Camera - Street View</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 09 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=com.smartprinter.scanner.printphotos.printmaster" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/smart-printer-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/smart-printer-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Smart Printer : Print Master</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 10 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=com.wmr.recoverdeletedmessages.smartrecovery.statussaver.chatrecover" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/smartrecovery-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/smartrecovery-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Deleted Message Smart Recovery</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- ✅ App 11 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=all.docsreader.filereader.viewer.office" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/docsreader-banner.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/docsreader-icon.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">PDF Reader: Docs Viewer</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <!-- ✅ App 12 -->
-        <div class="col-12 col-sm-6 col-lg-4">
-            <a href="https://play.google.com/store/apps/details?id=com.logomaker.logocreator.designlogo.logotemplates" target="_blank" class="text-decoration-none">
-                <div class="app-tile shadow-sm">
-                    <img src="/images/Banner/logo-maker.jpg" class="tile-banner" alt="">
-                    <div class="tile-info d-flex mt-3">
-                        <img src="/images/Icons/logo-maker.jpg" class="tile-icon" alt="">
-                        <div class="ms-3">
-                            <h5 style="font-size: 16px;" class="mb-0 fw-semibold">Logo Maker : Logo Creator</h5>
-                            <p style="font-size: 13px;" class="text-muted small mb-0">Satellite World Maps</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        
-
-    </div>
-</div>
-
-    <footer class="footer pt-5">
+    <!-- STATS SECTION START -->
     <div class="container">
+        <div class="row stats-section">
+            <div class="col-md-3 col-6 text-center mb-4">
+                <div class="stat-card">
+                    <h3 class="stat-number">15+</h3>
+                    <p class="stat-label">Total Apps</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <div class="stat-card">
+                    <h3 class="stat-number">10M+</h3>
+                    <p class="stat-label">Downloads</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <div class="stat-card">
+                    <h3 class="stat-number">4.5★</h3>
+                    <p class="stat-label">Avg Rating</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center mb-4">
+                <div class="stat-card">
+                    <h3 class="stat-number">50+</h3>
+                    <p class="stat-label">Countries</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- STATS SECTION END -->
+
+    <!-- OUR APPS SECTION -->
+    <div class="container my-5" id="apps">
+        <h2 class="section-title">Our Popular Apps</h2>
         <div class="row g-4">
-            
-            <!-- Company Info -->
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-title">About Us</h3>
-                <p class="mb-4">
-                    Satellite World Maps creates simple, useful, and high-quality mobile apps for everyday needs.
-                </p>
+
+            <!-- App 01 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=invoicemaker.receiptmaker.invoicegenerator.estimatemaker" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <span class="app-badge">Popular</span>
+                        <img src="/images/Banner/invoice-banner.jpg" class="tile-banner" alt="Invoice Maker">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/invoice-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Invoice Maker</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1 small">(4.5k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <!-- Privacy Policies Column 1 -->
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-title">Privacy Policy</h3>
-                <ul class="footer-links">
-                    <li><a href="/data-transfer/" target="_blank">Smart Switch</a></li>
-                    <li><a href="/remote-all/" target="_blank">Remote All App</a></li>
-                    <li><a href="/smart-printer/" target="_blank">Smart Printer App</a></li>
-                    <li><a href="/smart-recovery/" target="_blank">Smart Recovery App</a></li>
-                    <li><a href="/docs-reader/" target="_blank">Docs Viewer App</a></li>
-                </ul>
+            <!-- App 02 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=voicechanger.voiceeffects.audioeffects.funnysounds" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <span class="app-badge">New</span>
+                        <img src="/images/Banner/voicechanger-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="images/Icons/voicechanger-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Voice Changer</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-1 small">(3.2k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
-            <!-- Privacy Policies Column 2 -->
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-title">More Policies</h3>
-                <ul class="footer-links">
-                    <!-- <li><a href="#">PDF Scanner – Privacy Policy</a></li>
-                    <li><a href="#">Resume Builder – Privacy Policy</a></li>
-                    <li><a href="#">TV Remote – Privacy Policy</a></li>
-                    <li><a href="#">USB Screen Share – Privacy Policy</a></li>
-                    <li><a href="#">Other Apps – Privacy Policy</a></li> -->
-                </ul>
+            <!-- App 03 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=remotecontrolfortv.universaltvremotecontrol.remotecontrolforandroidtv" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <span class="app-badge">Hot</span>
+                        <img src="/images/Banner/remote-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="images/Icons/remote-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Universal TV Remote</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="ms-1 small">(5.8k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 04 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=themes.wallpapers.widgets.animewallpapers.customthemes.fontskeyboard" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/theme-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/theme-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Themes & Wallpapers</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1 small">(4.1k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 05 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=compassaccurate.compass.digitalandaccuratecompass" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/compass-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/compass-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Accurate Compass</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-1 small">(2.9k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 06 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=copymydata.phonetransfer.datacloneapp.transfercontent" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <span class="app-badge">Trending</span>
+                        <img src="/images/Banner/ss-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="images/Icons/ss-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Smart Switch App</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="ms-1 small">(6.2k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 07 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=speedometer.odometer.gpsspeedometer.speedtracker" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/speedometer-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/speedometer-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">GPS Speedometer</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1 small">(4.8k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 08 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=com.liveearth.webcams.live.earth.cam.maps.livecams.exploreworld.earthcams" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/camera-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/camera-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Live Camera - Street View</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="ms-1 small">(7.1k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 09 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=com.smartprinter.scanner.printphotos.printmaster" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/smart-printer-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/smart-printer-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Smart Printer</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1 small">(3.7k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 10 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=com.wmr.recoverdeletedmessages.smartrecovery.statussaver.chatrecover" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/smartrecovery-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/smartrecovery-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Smart Recovery</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-1 small">(2.3k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 11 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=all.docsreader.filereader.viewer.office" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <img src="/images/Banner/docsreader-banner.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/docsreader-icon.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">PDF Reader</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-1 small">(4.2k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- App 12 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <a href="https://play.google.com/store/apps/details?id=com.logomaker.logocreator.designlogo.logotemplates" target="_blank" class="text-decoration-none">
+                    <div class="app-tile shadow-sm">
+                        <span class="app-badge">New</span>
+                        <img src="/images/Banner/logo-maker.jpg" class="tile-banner" alt="">
+                        <div class="tile-info d-flex mt-3">
+                            <img src="/images/Icons/logo-maker.jpg" class="tile-icon" alt="">
+                            <div class="ms-3">
+                                <h5 class="mb-0 fw-semibold">Logo Maker</h5>
+                                <p class="text-muted small mb-0">Satellite World Maps</p>
+                                <div class="rating mt-1">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <span class="ms-1 small">(5.0k)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
 
         </div>
     </div>
+    <!-- OUR APPS SECTION END -->
 
-    <!-- Footer Bottom -->
+    <!-- FOOTER START -->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">About Us</h3>
+                    <p class="mb-4 text-white-50">
+                        Satellite World Maps creates simple, useful, and high-quality mobile apps for everyday needs. 
+                        We're dedicated to making technology accessible to everyone.
+                    </p>
+                    <!-- <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                    </div> -->
+                </div>
+
+                <!-- Privacy Policies Column 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Privacy Policy</h3>
+                    <ul class="footer-links">
+                        <li><a href="/data-transfer/" target="_blank"><i class="bi bi-arrow-right"></i> Smart Switch</a></li>
+                        <li><a href="/remote-all/" target="_blank"><i class="bi bi-arrow-right"></i> Remote All App</a></li>
+                        <li><a href="/smart-printer/" target="_blank"><i class="bi bi-arrow-right"></i> Smart Printer App</a></li>
+                        <li><a href="/smart-recovery/" target="_blank"><i class="bi bi-arrow-right"></i> Smart Recovery App</a></li>
+                        <li><a href="/docs-reader/" target="_blank"><i class="bi bi-arrow-right"></i> Docs Viewer App</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:support@satelliteworldmaps.com"><i class="bi bi-envelope me-2"></i> support@satelliteworldmaps.com</a></li>
+                        <!-- <li><a href="#"><i class="bi bi-telephone me-2"></i> +1 (555) 123-4567</a></li> -->
+                        <!-- <li><a href="#"><i class="bi bi-geo-alt me-2"></i> 123 App Street, Digital City</a></li> -->
+                    </ul>
+                    
+                    <!-- Newsletter -->
+                    <!-- <div class="mt-4">
+                        <h4 class="h6 text-white mb-3">Subscribe to our newsletter</h4>
+                        <div class="input-group">
+                            <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="Your email">
+                            <button class="btn btn-gradient" type="button">Subscribe</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
         <div class="footer-bottom mt-5">
             <div class="container">
-                <div class="row py-3">
+                <div class="row py-4">
                     <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2024 Satellite World Maps. All rights reserved.</p>
+                        <p class="mb-0 text-white-50">&copy; 2026 Satellite World Maps. All rights reserved.</p>
                     </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="/privacy-policy/" class="text-white-50 text-decoration-none me-3">Privacy</a>
+                        <a href="/offer-terms/" class="text-white-50 text-decoration-none me-3">Terms</a>                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- FOOTER END -->
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"45f164fe2d594529bc196d1f107db722","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous">
+    
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loading').classList.add('hide');
+            }, 500);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+                backToTop.classList.add('show');
+            } else {
+                navbar.classList.remove('scrolled');
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Back to Top Button
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.app-tile, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Cloudflare Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" 
+            integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" 
+            data-cf-beacon='{"version":"2024.11.0","token":"45f164fe2d594529bc196d1f107db722"}'
+            crossorigin="anonymous">
     </script>
 </body>
 </html>
